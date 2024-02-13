@@ -22,6 +22,7 @@ output "aws_lb_zone_id" {
   value = aws_lb.dev_proj_1_lb.zone_id
 }
 
+# application load balancer
 
 resource "aws_lb" "dev_proj_1_lb" {
   name               = var.lb_name

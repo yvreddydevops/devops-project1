@@ -20,7 +20,7 @@ resource "aws_security_group" "ec2_sg_ssh_http" {
   description = "Enable the Port 22(SSH) & Port 80(http)"
   vpc_id      = var.vpc_id
 
-  # ssh for terraform remote exec
+  # ssh for terraform remote exec to aws ec2
   ingress {
     description = "Allow remote SSH from anywhere"
     cidr_blocks = ["0.0.0.0/0"]

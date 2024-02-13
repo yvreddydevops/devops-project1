@@ -15,7 +15,7 @@ output "ssh_connection_string_for_ec2" {
 output "dev_proj_1_ec2_instance_id" {
   value = aws_instance.dev_proj_1_ec2.id
 }
-
+#EC2 instance
 resource "aws_instance" "dev_proj_1_ec2" {
   ami           = var.ami_id
   instance_type = var.instance_type

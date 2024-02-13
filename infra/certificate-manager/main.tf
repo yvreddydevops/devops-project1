@@ -11,6 +11,7 @@ resource "aws_acm_certificate" "dev_proj_1_acm_arn" {
 
   tags = {
     Environment = "production"
+    Project = "devopsproject"
   }
 
   lifecycle {

@@ -26,6 +26,7 @@ resource "aws_vpc" "dev_proj_1_vpc_eu_west_2" {
 
 
 # Setup public subnet
+
 resource "aws_subnet" "dev_proj_1_public_subnets" {
   count             = length(var.cidr_public_subnet)
   vpc_id            = aws_vpc.dev_proj_1_vpc_eu_west_2.id

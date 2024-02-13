@@ -20,7 +20,7 @@ variable "vpc_cidr" {
 
 variable "vpc_name" {
   type        = string
-  description = "DevOps Project 1 VPC 1"
+  description = "DevOps Project1 VPC1"
 }
 
 variable "cidr_public_subnet" {

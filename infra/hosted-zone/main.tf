@@ -7,6 +7,8 @@ data "aws_route53_zone" "dev_proj_1_jhooq_org" {
   private_zone = false
 }
 
+# Route53 hosted zone A record 
+
 resource "aws_route53_record" "lb_record" {
   zone_id = data.aws_route53_zone.dev_proj_1_jhooq_org.zone_id
   name    = var.domain_name
